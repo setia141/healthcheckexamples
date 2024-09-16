@@ -16,9 +16,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
+    runs-on: ubuntu-latest   
 
     steps:
     - uses: actions/checkout@v4
@@ -50,8 +48,6 @@ jobs:
   dependency-submission:
 
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
     - uses: actions/checkout@v4
